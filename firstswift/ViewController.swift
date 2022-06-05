@@ -20,9 +20,18 @@ class ViewController: NSViewController {
         a.person1.name = "mohamed"
         a.person1.number = "45015"
         printingdata(car: a)
-        // Do any additional setup after loading the view.
+        printingdatai(car:a)
     }
     func printingdata (car:Car)
+    {
+        
+        print(car.year)
+        print(car.person1)
+        print(car.name)
+        print(car.model)
+    }
+    
+    func printingdatai (car:Car)
     {
         
         print(car.year)
