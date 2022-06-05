@@ -16,19 +16,19 @@ class ViewController: NSViewController {
         a.name = "bmw"
         a.model = "2020"
         a.year = 2022
-        print(a.name)
         var person1 = person(name: "ahmed", number: "010202002020")
         a.person1.name = "mohamed"
         a.person1.number = "45015"
+        printingdata(car: a)
         // Do any additional setup after loading the view.
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+    func printingdata (car:Car)
+    {
+        
+        print(car.year)
+        print(car.person1)
+        print(car.name)
+        print(car.model)
     }
-
-
 }
 
