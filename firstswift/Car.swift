@@ -13,9 +13,28 @@ class Car
     {
         print("git object")
     }
+    var xx : String?
+    var home : Int
+    {
+        get
+        {
+            return year
+        }
+    }
     var name : String = ""
     var model = ""
     var year = 0
+    var homee : Int
+    {
+        get
+        {
+            return year
+        }
+        set (i)
+        {
+            year = i
+        }
+    }
     var person1 = person(name: "ali", number: "001221")
     deinit {
         print("destract the objects")
@@ -56,4 +75,31 @@ struct person
 {
     var name : String
     var number : String
+}
+
+class Model : Car
+{
+   override var homee: Int
+    {
+        get
+        {
+            return 10
+        }
+        set (i)
+        {
+            
+        }
+    }
+    override var year: Int
+    {
+        get
+        {
+            return super.year
+        }
+        set(x)
+        {
+            
+        }
+    }
+    
 }
